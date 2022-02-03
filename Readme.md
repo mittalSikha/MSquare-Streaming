@@ -2,6 +2,6 @@
 To run the application:
 ---
 - Clone the repository
-- `cd /Binge-Now`  
+- `cd /MSquare-Streaming`  
 - `npm install`
 - `node app.js`
