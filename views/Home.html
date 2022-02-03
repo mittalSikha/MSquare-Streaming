@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        .has-bg-img {
+            background: url(/../images/background_3.jpg)center center;
+            background-size: cover;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+
+
+</head>
+
+<body>
+
+</body>
+<section class="hero is-dark is-fullheight has-bg-img">
+    <div class="hero-head">
+        <nav class="navbar is-transparent">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href=home.html>
+                        <h1 class="title">MSQUARE STREAMING</h1>
+                    </a>
+                </div>
+                <div class="navbar-menu">
+                    <div class="navbar-end">
+                        <div class="navbar-item is-hoverable has-dropdown">
+                            <a class="navbar-link">
+                            View
+                          </a>
+
+                            <div class="navbar-dropdown has-background-info-dark">
+                               <a href="moviesList.html" class="navbar-item">
+                                      To-Watch Movies
+                                </a>
+                                <a href="sereisList.html" class="navbar-item">
+                                  To-Watch Series
+                                </a>
+                                <a href="watchedMovieList.html" class="navbar-item" >
+                                    Watched Movies
+                                </a>
+                                <a class="navbar-item" href="watchedSeriesList.html">
+                                    Watched Series
+                                </a>
+                                <a class="navbar-item" href="movieReviews.html">
+                                    Movie Reviews
+                                </a>
+                                <a class="navbar-item" href="seriesReviews.html">
+                                    Series Reviews
+                                </a>
+                            </div>
+                        </div>
+                        <div class="navbar-item is-hoverable has-dropdown">
+                            <a class="navbar-link">
+                            Add
+                          </a>
+                        
+                            <div class="navbar-dropdown has-background-info-dark">
+                                <a href="home.html" class="navbar-item">
+                                      To-Watch List
+                                </a>
+                                <a href="watched.html" class="navbar-item">
+                                  Watched List
+                                </a>
+                            </div>
+                        </div>
+                        <span class="navbar-item has-text-white">
+                            <a class="button is-danger is-inverted" href="index.html">
+                                <span>Logout</span>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-centered">
+                <form class="box"  id= "searchForm" action="/add/Watchlist" method="POST">
+                    <div class="field">
+                        <label class="label">Select type</label>
+                        <div class="control is-expanded">
+                            <div class="select">
+                                <select name="type" class="is-hovered" id="type" required>
+                                <option value="movie">Movie</option>
+                                <option value="series">Series</option>
+                              </select>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="field is-grouped">
+                        <p class="control is-expanded">
+                            <input class="input" name="search" type="text" placeholder="Find" id="searches" onchange="getmovies()" required>
+                        </p>
+                    </div>
+                    <div class="field is-grouped is-grouped-right">
+                        <p class="control">
+                            <input type="submit" value="submit" class="button is-info">
+                        </p>
+                        <p class="control">
+                            <input type="reset" value="reset" class="button is-danger">
+                        </p>
+                    </div>
+                    <div class="container" id="containers">
+                        <div id ="row">
+                            <ul id="movies-series">
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+<script src="/js/main.js"></script>
+</html>

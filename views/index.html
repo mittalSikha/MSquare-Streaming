@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MSquare Streaming</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+</head>
+
+<body id="index">
+    <section class="hero is-dark is-fullheight has-carousel">
+        <div id="carousel-demo" class="hero-carousel">
+            <div class="item-1">
+                <!-- Slide Content -->
+                <img class="is-background" src="/../images/878567.jpg" alt="">
+            </div>
+            <div class="item-2">
+                <!-- Slide Content -->
+                <img class="is-background" src="/../images/653303.jpg" alt="">
+            </div>
+            <div class="item-3">
+                <!-- Slide Content -->
+                <img class="is-background" src="/../images/1792135.jpg" alt="">
+            </div>
+        </div>
+        <div class="hero-head">
+            <nav class="navbar is-transparent">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="#index">
+                            <h1 class="title">MSQUARE STREAMING</h1>
+                        </a>
+                        <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+                  <span></span>
+                        <span></span>
+                        <span></span>
+                        </span>
+                    </div>
+                    <div id="navbarMenuHeroA" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a class="navbar-item has-text-white is-active" href="#aboutUs">
+                                About Us
+                            </a>
+                    <span class="navbar-item has-text-white">
+                        <a class="button is-primary is-inverted" href="register.html">
+                            <span>Sign Up</span>
+                        </a>
+
+                    </span>
+                            <span class="navbar-item has-text-white">
+                                <a class="button is-primary is-inverted" href="signIn.html">
+                                        <span>Sign In</span>
+                            </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="hero-body">
+
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+    <script>
+        bulmaCarousel.attach('#carousel-demo', {
+            slidesToScroll: 1,
+            slidesToShow: 1,
+            pagination: false,
+            autoplay: true,
+            loop: true,
+            autoplaySpeedn: 100,
+            navigation: false,
+        });
+    </script>
+    <section class="section is-large has-background-black has-text-white">
+        <div class="container">
+            <div class="content is-medium">
+                <h1 id="aboutUs" class="title is-family-code">About Us</h1>
+                <h2 class="subtitle">What to watch next ??</h2>
+                <p>We at <em>MSquare Streaming</em> help you to solve your problem on what to watch next.
+                    <ul class="is-bullet">
+                        <li>You can see other people's reviews and rating to decide what you want to watch next.</li>
+                        <li>You can review what you have watched, share your opinions about it with others.</li>
+                        <li>You can create list of what you want to watch next.</li>
+                        <li>You can create list of what you have already watched(for future references).</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </section>
+    
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+.navbar {
+    padding: 0%;
+    margin: 0%;
+}
+
+header {
+    background-color: whitesmoke;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10ch;
+    background-image: url(/images/KOD.jpg);
+    margin: 0;
+    padding: 0%;
+    height: 768px;
+    width: 1351px;
+}
+
+h1 {
+    padding: 0%;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkred;
+}
+
+li {
+    float: left;
+}
+
+ul li a {
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: black;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+#aboutUsId {
+    border: 1px black solid;
+    background-color: whitesmoke;
+    margin: 10px;
+    padding: 10px;
+    background-image: url(/home/noizy/Proyecto_de_dbms/images/2014FHD.jpg);
+}
+
+#aboutUsH2 {
+    text-decoration: underline;
+    font-size: 50px;
+}
+
+#aboutUsP {
+    background-color: whitesmoke;
+    font-size: medium;
+}
