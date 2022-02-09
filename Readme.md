@@ -1,4 +1,4 @@
-# Binge Now
+# MSquare Streaming
 To run the application:
 ---
 - Clone the repository
